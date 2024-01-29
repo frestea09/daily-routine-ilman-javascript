@@ -1,12 +1,10 @@
-class myClass {
-  constructor(inputName) {
-    this.name = inputName;
-  }
+class MyClass {
+  constructor() {}
   sayHello() {
     console.log("hello world");
   }
 }
 
-const tempTheObject = new myClass("ilman");
-console.log(tempTheObject.name);
-tempTheObject.sayHello();
+const myObject = new MyClass();
+
+myObject.sayHello();

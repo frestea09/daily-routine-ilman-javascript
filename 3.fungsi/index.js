@@ -1,3 +1,3 @@
-const getRestInput = (...inputVariable) => inputVariable;
+const getAddtion = (...inputOne) => inputOne;
 
-console.log(getRestInput(1, 2, 3, 4, 5, 6));
+console.log(getAddtion(2, 3));

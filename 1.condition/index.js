@@ -1,6 +1,11 @@
 const isThresholdOne = true;
 const isThresholdTwo = true;
 
-if (isThresholdOne && isThresholdTwo) {
-  console.log("benar");
-}
+const getResult = (inputOne, inputTwo) => {
+  if (inputOne && inputTwo) {
+    return true;
+  }
+  return false;
+};
+
+console.log(getResult(isThresholdOne, isThresholdTwo));
