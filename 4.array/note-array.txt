@@ -1,0 +1,120 @@
+
+Dalam JavaScript, array digunakan untuk menyimpan dan mengelola kumpulan nilai dalam satu variabel. Berikut adalah beberapa cara umum untuk bekerja dengan array:
+
+1. Membuat Array:
+javascript
+Copy code
+// Deklarasi array kosong
+let arrayKosong = [];
+
+// Deklarasi array dengan nilai awal
+let arrayAngka = [1, 2, 3, 4, 5];
+
+// Array dengan tipe data campuran
+let arrayCampuran = ['teks', 123, true];
+
+// Array objek
+let arrayObjek = [{ nama: 'John', usia: 30 }, { nama: 'Jane', usia: 25 }];
+2. Mengakses Elemen Array:
+javascript
+Copy code
+let arrayAngka = [1, 2, 3, 4, 5];
+
+// Mengakses elemen berdasarkan indeks
+let nilaiKetiga = arrayAngka[2];
+console.log(nilaiKetiga); // Output: 3
+3. Menambah dan Menghapus Elemen Array:
+javascript
+Copy code
+let arrayAngka = [1, 2, 3, 4, 5];
+
+// Menambah elemen di akhir array
+arrayAngka.push(6);
+
+// Menambah elemen di awal array
+arrayAngka.unshift(0);
+
+// Menghapus elemen di akhir array
+arrayAngka.pop();
+
+// Menghapus elemen di awal array
+arrayAngka.shift();
+4. Iterasi Melalui Array:
+a. Menggunakan For Loop:
+javascript
+Copy code
+let arrayAngka = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < arrayAngka.length; i++) {
+  console.log(arrayAngka[i]);
+}
+b. Menggunakan For-Of Loop:
+javascript
+Copy code
+let arrayAngka = [1, 2, 3, 4, 5];
+
+for (const nilai of arrayAngka) {
+  console.log(nilai);
+}
+c. Menggunakan ForEach Method:
+javascript
+Copy code
+let arrayAngka = [1, 2, 3, 4, 5];
+
+arrayAngka.forEach(function(nilai) {
+  console.log(nilai);
+});
+5. Menggunakan Metode Array lainnya:
+a. Filter:
+javascript
+Copy code
+let arrayAngka = [1, 2, 3, 4, 5];
+
+let arrayGenap = arrayAngka.filter(function(nilai) {
+  return nilai % 2 === 0;
+});
+console.log(arrayGenap); // Output: [2, 4]
+b. Map:
+javascript
+Copy code
+let arrayAngka = [1, 2, 3, 4, 5];
+
+let arrayPangkatDua = arrayAngka.map(function(nilai) {
+  return nilai ** 2;
+});
+console.log(arrayPangkatDua); // Output: [1, 4, 9, 16, 25]
+c. Reduce:
+javascript
+Copy code
+let arrayAngka = [1, 2, 3, 4, 5];
+
+let jumlah = arrayAngka.reduce(function(akumulator, nilai) {
+  return akumulator + nilai;
+}, 0);
+console.log(jumlah); // Output: 15
+6. Mengecek Kehadiran Elemen dalam Array:
+javascript
+let arrayAngka = [1, 2, 3, 4, 5];
+
+// Menggunakan includes
+let adaTiga = arrayAngka.includes(3);
+console.log(adaTiga); // Output: true
+
+// Menggunakan indexOf
+let indeksEmpat = arrayAngka.indexOf(4);
+console.log(indeksEmpat); // Output: 3 (indeks elemen 4)
+7. Menggabungkan Array:
+javascript
+Copy code
+let arraySatu = [1, 2, 3];
+let arrayDua = [4, 5, 6];
+
+// Menggunakan spread operator
+let arrayGabungan = [...arraySatu, ...arrayDua];
+console.log(arrayGabungan); // Output: [1, 2, 3, 4, 5, 6]
+Penting untuk memahami berbagai metode array yang tersedia, karena dapat mempermudah pekerjaan Anda dalam memanipulasi dan mengelola data. Pilihlah metode yang sesuai dengan kebutuhan spesifik Anda.
+
+
+
+
+

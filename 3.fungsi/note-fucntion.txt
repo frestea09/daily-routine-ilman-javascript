@@ -1,0 +1,81 @@
+1. Deklarasi Fungsi:
+javascript
+Copy code
+function namaFungsi(parameter1, parameter2) {
+  // Blok kode fungsi
+  // ...
+  return hasil;
+}
+
+// Memanggil fungsi
+const hasil = namaFungsi(nilai1, nilai2);
+2. Ekspresi Fungsi:
+javascript
+Copy code
+const namaFungsi = function(parameter1, parameter2) {
+  // Blok kode fungsi
+  // ...
+  return hasil;
+};
+
+// Memanggil fungsi
+const hasil = namaFungsi(nilai1, nilai2);
+3. Fungsi Panjang Variabel:
+javascript
+Copy code
+const namaFungsi = (parameter1, parameter2) => {
+  // Blok kode fungsi
+  // ...
+  return hasil;
+};
+
+// Memanggil fungsi
+const hasil = namaFungsi(nilai1, nilai2);
+4. Fungsi Tanpa Parameter:
+javascript
+Copy code
+function fungsiTanpaParameter() {
+  // Blok kode fungsi tanpa parameter
+  // ...
+}
+
+// Memanggil fungsi tanpa parameter
+fungsiTanpaParameter();
+5. Fungsi dengan Nilai Default Parameter (ES6+):
+javascript
+Copy code
+function fungsiDenganDefaultParameter(parameter1 = nilaiDefault1, parameter2 = nilaiDefault2) {
+  // Blok kode fungsi dengan nilai default parameter
+  // ...
+}
+
+// Memanggil fungsi dengan nilai default parameter
+fungsiDenganDefaultParameter(nilai1, nilai2);
+6. Fungsi sebagai Parameter Fungsi Lain (Callback):
+javascript
+Copy code
+function fungsiPertama(callback) {
+  // Blok kode fungsi pertama
+  // ...
+  callback();
+}
+
+function fungsiKedua() {
+  // Blok kode fungsi kedua
+  // ...
+}
+
+// Memanggil fungsi pertama dengan fungsi kedua sebagai callback
+fungsiPertama(fungsiKedua);
+7. Fungsi Arrow (ES6+):
+javascript
+Copy code
+const namaFungsi = (parameter1, parameter2) => {
+  // Blok kode fungsi
+  // ...
+  return hasil;
+};
+
+// Memanggil fungsi
+const hasil = namaFungsi(nilai1, nilai2);
+Penting untuk memahami bahwa fungsi dapat mengembalikan nilai dengan menggunakan pernyataan return. Selain itu, fungsi juga dapat digunakan sebagai parameter untuk fungsi lain, yang dikenal sebagai callback. Pilihan antara deklarasi dan ekspresi fungsi atau antara fungsi konvensional dan arrow tergantung pada kebutuhan dan preferensi Anda. Fungsi juga dapat memiliki parameter default untuk memberikan nilai default jika parameter tidak disediakan saat pemanggilan.

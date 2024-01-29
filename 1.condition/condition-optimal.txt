@@ -1,0 +1,55 @@
+If-Else Statements:
+
+javascript
+Copy code
+if (condition) {
+  // blok kode jika kondisi benar
+} else {
+  // blok kode jika kondisi salah
+}
+Ternary Operator:
+
+javascript
+Copy code
+var result = (condition) ? 'Nilai Benar' : 'Nilai Salah';
+Switch Statement:
+
+javascript
+Copy code
+switch (expression) {
+  case value1:
+    // blok kode jika expression sama dengan value1
+    break;
+  case value2:
+    // blok kode jika expression sama dengan value2
+    break;
+  default:
+    // blok kode jika expression tidak cocok dengan nilai manapun
+}
+
+Short-Circuit Evaluation:
+
+javascript
+Copy code
+// Contoh menggunakan AND (&&)
+(condition1 && condition2) && doSomething();
+
+// Contoh menggunakan OR (||)
+(condition1 || condition2) || doSomething();
+Guard Clauses:
+
+javascript
+Copy code
+function exampleFunction(parameter) {
+  if (!parameter) {
+    return 'Nilai parameter tidak valid';
+  }
+  // Blok kode jika parameter valid
+}
+Chaining Comparison Operators:
+
+javascript
+Copy code
+if (a > b && b > c) {
+  // Blok kode jika a lebih besar dari b dan b lebih besar dari c
+}

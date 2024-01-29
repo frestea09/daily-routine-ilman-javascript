@@ -1,0 +1,109 @@
+Objek merupakan struktur data yang memungkinkan Anda mengelompokkan dan menyimpan data bersama-sama dalam bentuk pasangan kunci-nilai. Objek dalam JavaScript dapat mewakili suatu entitas dengan properti dan metode terkait. Berikut adalah beberapa hal yang dapat Anda lakukan dengan objek di JavaScript:
+
+### 1. Membuat Objek:
+```javascript
+// Membuat objek kosong
+let objekKosong = {};
+
+// Membuat objek dengan properti
+let objekPerson = {
+  nama: 'John Doe',
+  usia: 25,
+  pekerjaan: 'Programmer'
+};
+```
+
+### 2. Mengakses Properti Objek:
+```javascript
+console.log(objekPerson.nama); // Output: John Doe
+console.log(objekPerson['usia']); // Output: 25
+```
+
+### 3. Menambah dan Mengubah Properti Objek:
+```javascript
+// Menambah properti baru
+objekPerson.alamat = 'Jl. Contoh No. 123';
+
+// Mengubah nilai properti
+objekPerson.usia = 26;
+```
+
+### 4. Menghapus Properti Objek:
+```javascript
+delete objekPerson.pekerjaan;
+```
+
+### 5. Looping Melalui Properti Objek:
+```javascript
+for (let prop in objekPerson) {
+  console.log(prop + ': ' + objekPerson[prop]);
+}
+```
+
+### 6. Objek Bersarang (Nested Objects):
+```javascript
+let objekBersarang = {
+  prop1: 'Nilai 1',
+  prop2: {
+    prop21: 'Nilai 2.1',
+    prop22: 'Nilai 2.2'
+  },
+  prop3: 'Nilai 3'
+};
+```
+
+### 7. Membandingkan Objek:
+```javascript
+let objekA = { nama: 'John' };
+let objekB = { nama: 'John' };
+
+console.log(objekA === objekB); // Output: false (karena objekA dan objekB memiliki referensi yang berbeda)
+```
+
+### 8. Menggunakan Fungsi sebagai Metode Objek:
+```javascript
+let objekDenganMetode = {
+  nama: 'Jane',
+  sapa: function() {
+    console.log('Halo, ' + this.nama + '!');
+  }
+};
+
+objekDenganMetode.sapa(); // Output: Halo, Jane!
+```
+
+### 9. Objek dan `this`:
+```javascript
+function ObjekPerson(nama, usia) {
+  this.nama = nama;
+  this.usia = usia;
+}
+
+let person1 = new ObjekPerson('Alice', 30);
+let person2 = new ObjekPerson('Bob', 25);
+```
+
+### 10. Memanfaatkan Metode Objek Built-in:
+```javascript
+let objekBuiltIn = {};
+
+// Mengetahui jumlah properti objek
+console.log(Object.keys(objekBuiltIn).length);
+
+// Mengecek apakah suatu properti ada dalam objek
+console.log('prop' in objekBuiltIn);
+```
+
+### 11. ES6+ Shorthand dan Destructuring:
+```javascript
+let nama = 'John';
+let usia = 28;
+
+// Shorthand property names
+let objekShorthand = { nama, usia };
+
+// Destructuring objek
+let { nama, usia } = objekShorthand;
+```
+
+Objek memungkinkan Anda untuk mengorganisir dan menyusun data dengan cara yang mudah dipahami. Pahami cara membuat, mengakses, dan memanipulasi objek untuk mengoptimalkan penggunaan Anda dalam pengembangan JavaScript.

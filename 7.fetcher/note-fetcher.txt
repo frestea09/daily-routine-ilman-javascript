@@ -1,0 +1,143 @@
+https://jsonplaceholder.typicode.com/users
+
+fetch(file)
+.then(x => x.text())
+.then(y => myDisplay(y));
+
+async function getText(file) {
+  let myObject =  await fetch(file);
+  let myText = await myObject.text();
+  myDisplay(myText);
+}
+
+// Mendefinisikan URL API yang akan diambil
+const apiUrl = 'https://api.example.com/data';
+
+// Menggunakan Fetch untuk melakukan permintaan GET
+fetch(apiUrl)
+  .then(response => {
+    // Memeriksa status respons HTTP
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    // Mengubah respons ke dalam format JSON
+    return response.json();
+  })
+  .then(data => {
+    // Data yang diambil dari API
+    console.log(data);
+  })
+  .catch(error => {
+    // Menangani kesalahan
+    console.error('Fetch error:', error);
+  });
+
+
+async function gsetData() {
+  const apiUrl = 'https://api.example.com/data';
+
+  try {
+    const response = await fetch(apiUrl);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error('Fetch error:', error.message);
+  }
+}
+
+// Panggil fungsi getData
+getData();
+
+
+async function sendData() {
+  const apiUrl = 'https://api.example.com/submit';
+
+  // Data yang akan dikirim
+  const postData = {
+    nama: 'John Doe',
+    usia: 30,
+    pekerjaan: 'Developer'
+  };
+
+  try {
+    const response = await fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(postData)
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error('Fetch error:', error.message);
+  }
+}
+
+// Panggil fungsi sendData
+sendData();
+
+
+
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching data:', error.message);
+    throw error;
+  }
+}
+
+// Contoh penggunaan
+const apiUrl = 'https://api.example.com/data';
+try {
+  const result = await fetchData(apiUrl);
+  console.log('Data fetched successfully:', result);
+} catch (error) {
+  // Tangani kesalahan di sini
+  console.error('Failed to fetch data:', error.message);
+}
+
+
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching data:', error.message);
+    throw error;
+  }
+}
+
+// Contoh penggunaan
+const apiUrl = 'https://api.example.com/data';
+try {
+  const result = await fetchData(apiUrl);
+  console.log('Data fetched successfully:', result);
+} catch (error) {
+  // Tangani kesalahan di sini
+  console.error('Failed to fetch data:', error.message);
+}

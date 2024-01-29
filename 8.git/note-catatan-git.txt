@@ -1,0 +1,26 @@
+-on local
+git status
+git add .
+git commit -m ""
+
+-undo thing 
+git log --oneline
+git revert (id yang mau di revert)
+
+-git branch
+git branch // check branch
+git branch name_branch // create branch
+git checkout name_branch // pindah branch
+
+-git merge the thing
+git checkout branch
+git merge checkout_branch_yang_mau_dicaplok
+git add .
+git commit -m 
+
+
+-delete branch
+git branch -d temp
+
+-combo
+git commit somtheing; git checkout somthing

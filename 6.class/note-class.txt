@@ -1,0 +1,99 @@
+Class adalah fitur yang diperkenalkan dalam ECMAScript 2015 (ES6) yang memungkinkan Anda membuat objek dengan cara yang lebih terstruktur dan bersifat blueprints (cetakan) untuk objek-objek yang akan dibuat. Berikut adalah cara menggunakan class dalam JavaScript:
+
+1. Mendefinisikan Class:
+javascript
+Copy code
+class Person {
+  constructor(nama, usia) {
+    this.nama = nama;
+    this.usia = usia;
+  }
+
+  sapa() {
+    console.log(`Halo, nama saya ${this.nama} dan saya berusia ${this.usia} tahun.`);
+  }
+}
+2. Membuat Objek dari Class:
+javascript
+Copy code
+let person1 = new Person('John', 30);
+let person2 = new Person('Jane', 25);
+
+person1.sapa(); // Output: Halo, nama saya John dan saya berusia 30 tahun.
+person2.sapa(); // Output: Halo, nama saya Jane dan saya berusia 25 tahun.
+3. Pewarisan (Inheritance) dalam Class:
+javascript
+Copy code
+class Employee extends Person {
+  constructor(nama, usia, jabatan) {
+    super(nama, usia);
+    this.jabatan = jabatan;
+  }
+
+  kerja() {
+    console.log(`${this.nama} sedang bekerja sebagai ${this.jabatan}.`);
+  }
+}
+
+let employee1 = new Employee('Alice', 28, 'Software Engineer');
+employee1.sapa(); // Output: Halo, nama saya Alice dan saya berusia 28 tahun.
+employee1.kerja(); // Output: Alice sedang bekerja sebagai Software Engineer.
+4. Static Methods dalam Class:
+javascript
+Copy code
+class MathUtil {
+  static tambah(a, b) {
+    return a + b;
+  }
+
+  static kali(a, b) {
+    return a * b;
+  }
+}
+
+let hasilTambah = MathUtil.tambah(5, 3); // Output: 8
+let hasilKali = MathUtil.kali(2, 4); // Output: 8
+5. Getters dan Setters dalam Class:
+javascript
+Copy code
+class Circle {
+  constructor(jariJari) {
+    this._jariJari = jariJari;
+  }
+
+  get diameter() {
+    return this._jariJari * 2;
+  }
+
+  set diameter(diameter) {
+    this._jariJari = diameter / 2;
+  }
+}
+
+let lingkaran = new Circle(5);
+console.log(lingkaran.diameter); // Output: 10
+lingkaran.diameter = 12;
+console.log(lingkaran._jariJari); // Output: 6
+6. Penggunaan Class dengan Promise (Contoh Async):
+javascript
+Copy code
+class AsyncExample {
+  async fetchData() {
+    return new Promise((resolve, reject) => {
+      // Simulasi pengambilan data asynchronous
+      setTimeout(() => {
+        const data = 'Data berhasil diambil';
+        resolve(data);
+      }, 1000);
+    });
+  }
+}
+
+async function main() {
+  const asyncObj = new AsyncExample();
+  const data = await asyncObj.fetchData();
+  console.log(data); // Output: Data berhasil diambil
+}
+
+main();
+Class memberikan cara yang lebih baik untuk mengorganisir kode, mengelompokkan logika terkait, dan memfasilitasi pewarisan dan pembuatan objek. Class memungkinkan paradigma pemrograman berorientasi objek (OOP) dalam JavaScript.
