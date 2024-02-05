@@ -1,10 +1,8 @@
-const myObject = {
+const objectItem = {
   name: "ilman",
-  sayHello: () => {
-    console.log("hello");
-  },
+  age: 12,
+  sayHello: () => console.log("hello world"),
 };
 
-for (let item in myObject) {
-  console.log(item);
-}
+console.log(objectItem.name);
+objectItem.sayHello();

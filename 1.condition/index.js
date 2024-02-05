@@ -1,11 +1,9 @@
-const isThresholdOne = true;
-const isThresholdTwo = true;
+const inCondition = true;
 
-const getResult = (inputOne, inputTwo) => {
-  if (inputOne && inputTwo) {
-    return true;
+const getValidation = (inputCondition) => {
+  if (inputCondition) {
+    console.log("benar");
   }
-  return false;
 };
 
-console.log(getResult(isThresholdOne, isThresholdTwo));
+console.log(getValidation(true));

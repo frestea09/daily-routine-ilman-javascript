@@ -1,3 +1,3 @@
-const getAddtion = (...inputOne) => inputOne;
+const getAddition = (inputOne, inputTwo) => inputOne + inputTwo;
 
-console.log(getAddtion(2, 3));
+console.log(getAddition(2, 3));
