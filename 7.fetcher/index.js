@@ -1,9 +1,9 @@
 const urlSaya = "https://jsonplaceholder.typicode.com/users";
 
-const GetData = async (inputUrl) => {
-  const response = await fetch(inputUrl);
-  const data = await response.json9;
-  console.log(data);
+const getData = async (inputURL) => {
+  const fetcher = await fetch(inputURL);
+  const result = await fetcher.json();
+  console.log("the result", result);
 };
 
-GetData(urlSaya);
+getData(urlSaya);

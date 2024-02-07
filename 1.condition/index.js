@@ -1,9 +1,7 @@
-const inCondition = true;
-
-const getValidation = (inputCondition) => {
-  if (inputCondition) {
-    console.log("benar");
+const GetItem = (itemOfchoices) => {
+  if (itemOfchoices) {
+    console.log("your choice benar");
   }
 };
 
-console.log(getValidation(true));
+GetItem(true);

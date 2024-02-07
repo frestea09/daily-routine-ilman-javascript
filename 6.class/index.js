@@ -1,17 +1,13 @@
 class MyClass {
   constructor() {}
-  sayHello() {
+  sayHelloWorld() {
     console.log("hello world");
   }
-  getAddition(inputPertama, inputKedua) {
-    return inputPertama + inputKedua;
-  }
-  getRestParamater(...inputParameter) {
-    return inputParameter;
+  getAddition(inputOne, inputTwo) {
+    return inputOne + inputTwo;
   }
 }
 
-const objMyClass = new MyClass();
-objMyClass.sayHello();
-console.log(objMyClass.getAddition(3, 4));
-console.log(objMyClass.getRestParamater(1, 2, 3, 4));
+const myObject = new MyClass();
+const hasil = myObject.getAddition(2, 3);
+console.log(hasil);

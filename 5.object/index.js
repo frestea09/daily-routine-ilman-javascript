@@ -1,8 +1,8 @@
-const objectItem = {
-  name: "ilman",
-  age: 12,
+const myObject = {
+  name: "ilman teguh prasetya",
   sayHello: () => console.log("hello world"),
 };
 
-console.log(objectItem.name);
-objectItem.sayHello();
+myObject.sayHello();
+
+console.log(myObject.name);
