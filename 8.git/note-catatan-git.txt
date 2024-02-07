@@ -24,3 +24,4 @@ git branch -d temp
 
 -combo
 git commit somtheing; git checkout somthing
+git branch --delete old-branch.
