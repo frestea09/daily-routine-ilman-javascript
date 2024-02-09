@@ -1,8 +1,1 @@
-hello world 
-
-- satu 
-
-feature 
-
-- di tambah oleh branch
-- tolong hapus nanti 
+hello world

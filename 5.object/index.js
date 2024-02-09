@@ -1,8 +1,6 @@
 const myObject = {
   name: "ilman teguh prasetya",
-  sayHello: () => console.log("hello world"),
+  sayHello: () => console.log("hello"),
 };
-
-myObject.sayHello();
 
 console.log(myObject.name);

@@ -1,3 +1,3 @@
-let listBilangan = [1, 2, 3, 4, 5];
+const listBilangan = [1, 2, 3, 4, 5, 6];
 
-listBilangan.forEach((item) => console.log(item));
+listBilangan.forEach((item) => console.log("item", item));

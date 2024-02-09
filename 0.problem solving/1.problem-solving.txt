@@ -2,27 +2,27 @@ Problem-solving adalah keterampilan kunci dalam pengembangan perangkat lunak dan
 
 Pahami Masalah:
 
-*Baca dan pahami masalah dengan seksama.
-*Identifikasi input yang diberikan dan output yang diharapkan.
+    *Baca dan pahami masalah dengan seksama.
+    *Identifikasi input yang diberikan dan output yang diharapkan.
 
 Rencanakan Solusi:
 
-Rencanakan algoritma atau pendekatan penyelesaian.
-Pilih struktur data dan algoritma yang sesuai.
+    Rencanakan algoritma atau pendekatan penyelesaian.
+    Pilih struktur data dan algoritma yang sesuai.
 
 *Pecahkan Masalah Secara Bertahap:
 
-*Pecahkan masalah dalam langkah-langkah kecil yang dapat diimplementasikan satu per satu.
-*Fokus pada satu bagian dari masalah pada satu waktu.
+    *Pecahkan masalah dalam langkah-langkah kecil yang dapat diimplementasikan satu per satu.
+    *Fokus pada satu bagian dari masalah pada satu waktu.
 
 Gunakan Pseudocode:
 
-Tulis pseudocode atau deskripsi informal dari solusi sebelum mengkode.
-Ini membantu Anda memahami algoritma secara lebih jelas sebelum melibatkan sintaksis bahasa pemrograman.
+    Tulis pseudocode atau deskripsi informal dari solusi sebelum mengkode.
+    Ini membantu Anda memahami algoritma secara lebih jelas sebelum melibatkan sintaksis bahasa pemrograman.
 Implementasikan Kode:
 
-Implementasikan solusi dengan menggunakan bahasa pemrograman yang sesuai.
-Gunakan sintaksis dan struktur bahasa dengan benar.
+    Implementasikan solusi dengan menggunakan bahasa pemrograman yang sesuai.
+    Gunakan sintaksis dan struktur bahasa dengan benar.
 Uji Coba dan Debug:
 
 *Uji coba solusi dengan memberikan input yang berbeda.

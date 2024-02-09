@@ -1,9 +1,3 @@
-const listBilangan = [1, 2, 3, 4, 5, 6];
+const listBilangan = [1, 2, 3, 4, 5];
 
-listBilangan.forEach((item) => console.log(item));
-
-const temp = listBilangan.map((item) => item * 2);
-
-console.log(temp, "temp");
-listBilangan.push(4);
-console.log(listBilangan);
+console.log(listBilangan.filter((item) => item > 3));

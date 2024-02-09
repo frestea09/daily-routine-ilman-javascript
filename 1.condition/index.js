@@ -1,7 +1,8 @@
-const GetItem = (itemOfchoices) => {
-  if (itemOfchoices) {
-    console.log("your choice benar");
-  }
-};
+const condtionOne = true;
+const conditionTwo = false;
 
-GetItem(true);
+if (conditionTwo && condtionOne) {
+  console.log("true");
+} else {
+  console.log("false");
+}
