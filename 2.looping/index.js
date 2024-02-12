@@ -1,3 +1,11 @@
-const listBilangan = [1, 2, 3, 4, 5, 6];
+let listBilangna = [1, 2, 3, 4, 5];
+let threshold = true;
+let iteration = 0;
 
-listBilangan.forEach((item) => console.log("item", item));
+while (threshold) {
+  if (iteration > listBilangna.length) {
+    threshold = false;
+  }
+  console.log(listBilangna[iteration]);
+  iteration++;
+}

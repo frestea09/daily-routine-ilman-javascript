@@ -23,10 +23,11 @@ Implementasikan Kode:
 
     Implementasikan solusi dengan menggunakan bahasa pemrograman yang sesuai.
     Gunakan sintaksis dan struktur bahasa dengan benar.
+
 Uji Coba dan Debug:
 
-*Uji coba solusi dengan memberikan input yang berbeda.
-*Identifikasi dan perbaiki bug atau kesalahan yang mungkin muncul.
+    *Uji coba solusi dengan memberikan input yang berbeda.
+    *Identifikasi dan perbaiki bug atau kesalahan yang mungkin muncul.
 
 Optimalkan Solusi:
 

@@ -1,3 +1,3 @@
-const getValidation = (...inputPertama) => inputPertama;
+const getRestParameter = (...restParameter) => restParameter;
 
-console.log(getValidation(1, 2, 3, 4, 5));
+console.log(getRestParameter(1, 2, 3, 4, 5));
