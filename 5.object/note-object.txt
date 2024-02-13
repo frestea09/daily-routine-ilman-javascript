@@ -47,7 +47,7 @@ let objekBersarang = {
   prop2: {
     prop21: 'Nilai 2.1',
     prop22: 'Nilai 2.2'
-  },
+  }
   prop3: 'Nilai 3'
 };
 ```

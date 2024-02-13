@@ -1,11 +1,10 @@
-let listBilangna = [1, 2, 3, 4, 5];
-let threshold = true;
+let threhold = true;
 let iteration = 0;
 
-while (threshold) {
-  if (iteration > listBilangna.length) {
-    threshold = false;
+while (threhold) {
+  if (iteration > 5) {
+    threhold = false;
   }
-  console.log(listBilangna[iteration]);
+  console.log(iteration);
   iteration++;
 }

@@ -1,3 +1,13 @@
-const listBilangan = [1, 2, 3, 4, 5];
+const litsBilangan = [1, 2, 3, 4, 5];
 
-console.log(listBilangan.filter((item) => item > 3));
+litsBilangan.forEach((item) => console.log("item", item));
+
+const resultTwo = litsBilangan.map((item) => item * 2);
+console.log(litsBilangan);
+console.log("result two", resultTwo);
+
+litsBilangan.push("2");
+console.log(litsBilangan);
+
+console.log(litsBilangan.includes(2));
+console.log(litsBilangan.filter((item) => item > 2));
