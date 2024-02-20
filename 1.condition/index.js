@@ -1,8 +1,8 @@
-const conditionOne = true;
-const condtionTwo = true;
+const conditonOne = true;
+const conditionTwo = true;
 
-if (conditionOne && condtionTwo) {
-  console.log("benar benar berhasilll");
+if (conditonOne && conditionTwo) {
+  console.log("sudah benar");
 } else {
-  console.log("salah");
+  console.log("sudah salah");
 }

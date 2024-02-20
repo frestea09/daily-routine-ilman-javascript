@@ -1,5 +1,7 @@
 const redux = require("redux");
+const reduxLogger = require("redux-logger");
 const producer = require("immer").produce;
+const reduxMiddleware = redux.applyMiddleware;
 const initialStatePencil = {
   name: "pencil",
   address: {
@@ -46,12 +48,16 @@ const PencilReducer = (state = initialStatePencil, action) => {
       return state;
   }
 };
+const store = redux.createStore(
+  PencilReducer,
+  reduxMiddleware(reduxLogger.logger)
+);
 
-const store = redux.createStore(PencilReducer);
 const unSubscribe = store.subscribe(() =>
   console.log("update state", store.getState())
 );
 const bindActionCreators = redux.bindActionCreators;
 const action = bindActionCreators({ updatePencil, getDatae }, store.dispatch);
 action.updatePencil("ganteng");
+action.updatePencil("temp");
 unSubscribe();

@@ -19,6 +19,7 @@ Gunakan Pseudocode:
 
     Tulis pseudocode atau deskripsi informal dari solusi sebelum mengkode.
     Ini membantu Anda memahami algoritma secara lebih jelas sebelum melibatkan sintaksis bahasa pemrograman.
+
 Implementasikan Kode:
 
     Implementasikan solusi dengan menggunakan bahasa pemrograman yang sesuai.
@@ -31,9 +32,9 @@ Uji Coba dan Debug:
 
 Optimalkan Solusi:
 
-*Pertimbangkan untuk mengoptimalkan kinerja solusi jika diperlukan.
-Identifikasi bagian-bagian yang dapat diop  timalkan.
-Berfokus pada Keterbacaan Kode:
+    *Pertimbangkan untuk mengoptimalkan kinerja solusi jika diperlukan.
+    Identifikasi bagian-bagian yang dapat diop  timalkan.
+    Berfokus pada Keterbacaan Kode:
 
 Tulis kode yang mudah dipahami oleh orang lain (dan oleh Anda sendiri di masa depan).
 Gunakan nama variabel yang deskriptif dan komentar jika diperlukan.
