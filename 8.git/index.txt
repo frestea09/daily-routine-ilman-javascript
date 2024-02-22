@@ -3,4 +3,3 @@ helo ganteng
 - feature : 
 
 - goal
-- delete this
