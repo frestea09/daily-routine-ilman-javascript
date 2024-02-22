@@ -1,5 +1,3 @@
-function getAddtion(inputpertama, inputKedua) {
-  return inputpertama + inputKedua;
-}
+let listBilangan = [1, 2, 3, 4, 5, 6];
 
-getAddtion(1, 2);
+listBilangan.forEach((item) => console.log(item));

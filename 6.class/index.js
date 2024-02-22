@@ -1,8 +1,9 @@
-class MyObjectGanteng {
+class MyClass {
+  constructor() {}
   sayHello() {
     console.log("hello world");
   }
 }
 
-const theObject = new MyObjectGanteng();
-theObject.sayHello();
+const myObjectTemp = new MyClass();
+myObjectTemp.sayHello();

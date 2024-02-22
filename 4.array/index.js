@@ -1,11 +1,13 @@
 const bilangans = [1, 2, 3, 4, 5];
 
+bilangans.forEach((item) => console.log(item));
+
+bilangans.push(2);
+
 console.log(bilangans);
 
-bilangans.push(9);
+let anotherList = bilangans.map((item) => item * 2);
+console.log(anotherList);
 
-console.log(bilangans);
-
-console.log(bilangans.filter((item) => item > 2));
-
-console.log(bilangans.includes(3));
+console.log(anotherList.includes(2));
+console.log(anotherList.filter((item) => item < 3));

@@ -1,3 +1,5 @@
-const doAddtion = (inputPertama, inputKedua) => inputPertama + inputKedua;
+const getAddtion = (inputPertama, inputKedua) => {
+  return inputPertama + inputKedua;
+};
 
-console.log(doAddtion(2, 3));
+console.log(getAddtion(1, 2));
