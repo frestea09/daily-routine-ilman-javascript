@@ -1,3 +1,10 @@
-let listBilangan = [1, 2, 3, 4, 5, 6];
+let isThreshold = true;
+let iteration = 0;
 
-listBilangan.forEach((item) => console.log(item));
+while (isThreshold) {
+  if (iteration > 5) {
+    isThreshold = false;
+  }
+  console.log(iteration);
+  iteration++;
+}

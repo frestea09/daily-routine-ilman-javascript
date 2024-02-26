@@ -1,13 +1,12 @@
-const bilangans = [1, 2, 3, 4, 5];
+const listBilangan = [1, 2, 3, 4, 5, 6];
 
-bilangans.forEach((item) => console.log(item));
+console.log("listBilangan", listBilangan);
 
-bilangans.push(2);
+listBilangan.push(5);
 
-console.log(bilangans);
+console.log("listBilangan", listBilangan);
 
-let anotherList = bilangans.map((item) => item * 2);
-console.log(anotherList);
+listBilangan.forEach((item) => console.log(item));
 
-console.log(anotherList.includes(2));
-console.log(anotherList.filter((item) => item < 3));
+const upgradeVariable = listBilangan.map((item) => item * 2);
+console.log("upgradeVariable", upgradeVariable);

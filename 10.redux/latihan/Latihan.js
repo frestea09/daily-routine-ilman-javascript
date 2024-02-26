@@ -1,21 +1,25 @@
 const { createSlice } = require("@reduxjs/toolkit");
 
 const initialState = {
-  numOfShoes: 10,
+  count: 0,
 };
 
-const ShoesSlice = createSlice({
-  name: "shoes",
+const myCount = createSlice({
+  name: "count",
   initialState,
   reducers: {
-    orderedShoes: (state) => {
-      state.numOfShoes--;
+    addition: (state) => {
+      state.count++;
     },
-    restockShoes: (state, action) => {
-      state.numOfShoes += action.payload;
+    substraction: (state) => {
+      state.count--;
+    },
+    customAddtion: (state, action) => {
+      console.log(action);
+      state.count += action.payload;
     },
   },
 });
 
-module.exports = ShoesSlice.reducer;
-module.exports.ShoesSliceAction = ShoesSlice.actions;
+module.exports = myCount.reducer;
+module.exports.countActions = myCount.actions;

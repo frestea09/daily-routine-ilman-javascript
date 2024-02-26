@@ -1,5 +1,3 @@
-const getAddtion = (inputPertama, inputKedua) => {
-  return inputPertama + inputKedua;
-};
+const getRestParamater = (...inputParamater) => inputParamater;
 
-console.log(getAddtion(1, 2));
+console.log(getRestParamater(1, 2, 3, 4, 5));

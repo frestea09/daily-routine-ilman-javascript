@@ -1,7 +1,8 @@
-const itemChoice = 2;
+const conditionOne = true;
+const conditionTwo = true;
 
-if (itemChoice == 1) {
-  console.log("you choice one");
-} else if (itemChoice == 2) {
-  console.log("you choice two");
+if (conditionOne && conditionTwo) {
+  console.log("sudah sangat benar");
+} else {
+  console.log("engga teralu benar");
 }

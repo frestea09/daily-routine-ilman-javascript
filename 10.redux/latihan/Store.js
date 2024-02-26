@@ -1,8 +1,9 @@
-const configurateState = require("@reduxjs/toolkit").configureStore;
-const shoesReducer = require("./Latihan");
-const store = configurateState({
+const { configureStore } = require("@reduxjs/toolkit");
+const myCount = require("./Latihan");
+
+const store = configureStore({
   reducer: {
-    shoes: shoesReducer,
+    count: myCount,
   },
 });
 
