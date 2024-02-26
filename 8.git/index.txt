@@ -1,5 +1,2 @@
 helo ganteng 
 
-- feature : 
-
-- goal
