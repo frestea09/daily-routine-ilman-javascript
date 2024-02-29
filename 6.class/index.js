@@ -1,9 +1,8 @@
-class MyClass {
+class GantengBange {
   constructor() {}
   sayHelloWorld() {
     console.log("hello world");
   }
 }
-
-const myObject = new MyClass();
-myObject.sayHello();
+const HelloWorld = new GantengBange();
+HelloWorld.sayHelloWorld();

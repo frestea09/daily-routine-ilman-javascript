@@ -1,10 +1,4 @@
-let isThreshold = true;
-let iteration = 0;
+const listIteration = [1, 2, 3, 4, 5];
+const theResult = listIteration.map((item) => item * 2);
 
-while (isThreshold) {
-  if (iteration > 5) {
-    isThreshold = false;
-  }
-  console.log(iteration);
-  iteration++;
-}
+console.log(theResult);

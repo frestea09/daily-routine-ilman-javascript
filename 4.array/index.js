@@ -1,12 +1,8 @@
-const listBilangan = [1, 2, 3, 4, 5, 6];
+const listBilangan = [1, 2, 3];
 
-console.log("listBilangan", listBilangan);
+listBilangan.map((item) => console.log("item", item));
 
-listBilangan.push(5);
-
-console.log("listBilangan", listBilangan);
-
-listBilangan.forEach((item) => console.log(item));
-
-const upgradeVariable = listBilangan.map((item) => item * 2);
-console.log("upgradeVariable", upgradeVariable);
+listBilangan.push({ id: 3, name: "temp" });
+console.log(listBilangan);
+console.log(listBilangan.includes(2));
+console.log(listBilangan.filter((item) => item > 1));

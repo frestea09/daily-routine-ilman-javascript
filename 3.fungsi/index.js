@@ -1,3 +1,3 @@
-const getRestParamater = (...inputParamater) => inputParamater;
+const getItem = (...restItem) => restItem;
 
-console.log(getRestParamater(1, 2, 3, 4, 5));
+console.log(getItem(1, 2, 3, 4, 5));

@@ -1,10 +1,9 @@
-const myObject = {
+const myObjectTemp = {
   name: "ilman",
   age: 30,
   sayHello: () => {
-    console.log("hello world");
+    console.log("hello two");
   },
 };
 
-console.log(myObject.name);
-console.log(myObject.age);
+myObjectTemp.sayHello();

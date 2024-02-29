@@ -1,8 +1,7 @@
-const conditionOne = true;
-const conditionTwo = true;
+const getThreshold = (inputThreshold) => {
+  if (inputThreshold) {
+    console.log("you are choice right");
+  }
+};
 
-if (conditionOne && conditionTwo) {
-  console.log("sudah sangat benar");
-} else {
-  console.log("engga teralu benar");
-}
+getThreshold(true);
