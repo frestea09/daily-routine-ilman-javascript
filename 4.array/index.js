@@ -1,8 +1,14 @@
-const listBilangan = [1, 2, 3];
+const listBilangan = [1, 2, 3, 4, 5];
 
-listBilangan.map((item) => console.log("item", item));
+listBilangan.forEach((item) => console.log(item));
 
-listBilangan.push({ id: 3, name: "temp" });
+let changeVariable = listBilangan.map((item) => item * 2);
+
+console.log("berubah", changeVariable);
+
+listBilangan.push("temp");
+
 console.log(listBilangan);
-console.log(listBilangan.includes(2));
+
 console.log(listBilangan.filter((item) => item > 1));
+console.log(listBilangan.includes(3));

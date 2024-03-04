@@ -1,3 +1,4 @@
-const getItem = (...restItem) => restItem;
-
-console.log(getItem(1, 2, 3, 4, 5));
+const getRestParamater = (...inputParamter) => {
+  return inputParamter;
+};
+console.log(getRestParamater(1, 2, 3, 4, 5));

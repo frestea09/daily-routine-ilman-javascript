@@ -1,7 +1,7 @@
-const getThreshold = (inputThreshold) => {
-  if (inputThreshold) {
-    console.log("you are choice right");
-  }
+const isThereshold = true;
+
+const getValidation = (isThereshold) => {
+  return isThereshold && "benar";
 };
 
-getThreshold(true);
+console.log(getValidation(isThereshold));
