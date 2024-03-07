@@ -2,3 +2,7 @@ hello ganteng
 
 feature : 
 
+- satu 
+- dua
+- tiga
+
