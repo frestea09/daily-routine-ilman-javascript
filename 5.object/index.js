@@ -1,9 +1,9 @@
 const myObject = {
   name: "ilman",
-  isLogin: true,
-  sayHello: () => {
+  sayHelloWorld: () => {
     console.log("hello world");
   },
 };
-myObject.sayHello();
+
+console.log(myObject.sayHelloWorld());
 console.log(myObject.name);

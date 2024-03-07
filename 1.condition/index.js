@@ -1,7 +1,4 @@
-const isThereshold = true;
+const isThreshold = true;
+const tennaryCondition = isThreshold ? "true" : "false";
 
-const getValidation = (isThereshold) => {
-  return isThereshold && "benar";
-};
-
-console.log(getValidation(isThereshold));
+console.log(tennaryCondition);

@@ -1,14 +1,15 @@
-const listBilangan = [1, 2, 3, 4, 5];
+const listBilangan = [1, 2, 3, 4, 5, 6];
 
 listBilangan.forEach((item) => console.log(item));
 
-let changeVariable = listBilangan.map((item) => item * 2);
+const listTemp = ["temp", 1, "dua", 3];
 
-console.log("berubah", changeVariable);
+console.log(listTemp.filter((item) => item > 1));
+console.log(listTemp.includes(1));
 
-listBilangan.push("temp");
+listTemp.push("super temp");
 
-console.log(listBilangan);
+console.log(listTemp);
 
-console.log(listBilangan.filter((item) => item > 1));
-console.log(listBilangan.includes(3));
+const listResult = [...listBilangan, ...listTemp];
+console.log(listResult);
