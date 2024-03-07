@@ -1,6 +1,2 @@
 hello ganteng
 
-- feature : 
-
-1. one
-
