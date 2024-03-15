@@ -1,8 +1,1 @@
-hello ganteng
-
-feature : 
-
-- satu 
-- dua
-- tiga
-
+latihan 15 maret 2024
