@@ -1,4 +1,7 @@
-const isThreshold = true;
-const tennaryCondition = isThreshold ? "true" : "false";
+const getFunction = (inputCondition) => {
+  if (inputCondition) {
+    return "benar";
+  }
+};
 
-console.log(tennaryCondition);
+console.log(getFunction(true));

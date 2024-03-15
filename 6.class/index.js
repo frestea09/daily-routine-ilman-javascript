@@ -1,9 +1,15 @@
 class MyClass {
   constructor() {}
-  sayHelloWorld() {
+  sayHello() {
     console.log("hello world");
   }
 }
 
-const myClass = new MyClass();
-myClass.sayHelloWorld();
+class Human extends MyClass {
+  getAddtion(inputOne, inputTwo) {
+    return inputOne + inputTwo;
+  }
+}
+
+const temp = new Human();
+temp.sayHello();
