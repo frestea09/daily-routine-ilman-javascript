@@ -53,3 +53,6 @@ Copy code
 if (a > b && b > c) {
   // Blok kode jika a lebih besar dari b dan b lebih besar dari c
 }
+
+
+// optimatilasasi 

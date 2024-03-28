@@ -1,15 +1,21 @@
 class MyClass {
+  name = "ilman";
   constructor() {}
   sayHello() {
-    console.log("hello world");
+    console.log("hello world", this.name);
   }
 }
-
-class Human extends MyClass {
-  getAddtion(inputOne, inputTwo) {
-    return inputOne + inputTwo;
+class Manusia extends MyClass {
+  constructor(inputName) {
+    super();
+    this.tampan = inputName;
+  }
+  getName() {
+    return this.name;
   }
 }
+const objClass = new MyClass();
+objClass.sayHello();
 
-const temp = new Human();
-temp.sayHello();
+const objManusia = new Manusia();
+console.log(objManusia.getName());
