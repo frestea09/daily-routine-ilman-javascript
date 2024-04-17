@@ -56,3 +56,32 @@ if (a > b && b > c) {
 
 
 // optimatilasasi 
+# always return when is failed
+# Use Array.includes for Multiple Criteria
+function test(fruit) {
+  // extract conditions to array
+  const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];
+
+  if (redFruits.includes(fruit)) {
+    console.log('red');
+  }
+}
+
+# Less Nesting, Return Early
+#  Use Default Function Parameters and Destructuring
+  #use lodash 
+
+# Favor Map / Object Literal than Switch Statement
+
+// use object literal to find fruits in color
+  const fruitColor = {
+    red: ['apple', 'strawberry'],
+    yellow: ['banana', 'pineapple'],
+    purple: ['grape', 'plum']
+  };
+
+function test(color) {
+  return fruitColor[color] || [];
+}
+
+# Use Array.every & Array.some for All / Partial Criteria
