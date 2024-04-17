@@ -85,3 +85,17 @@ function test(color) {
 }
 
 # Use Array.every & Array.some for All / Partial Criteria
+const ages = [32, 33, 16, 40];
+
+ages.every(checkAge)
+
+function checkAge(age) {
+  return age > 18;
+}
+
+const ages = [3, 10, 18, 20];
+
+ages.some(checkAdult);
+function checkAdult(age) {
+  return age > 18;
+}
