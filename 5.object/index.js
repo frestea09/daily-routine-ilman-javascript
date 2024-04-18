@@ -1,8 +1,9 @@
-const listbilangan = {
-  name: "ilman",
+const myObject = {
+  name: "ilman teguh prasetya",
+  age: 23,
   sayHello: () => {
     console.log("hello world");
   },
 };
 
-listbilangan.sayHello();
+myObject.sayHello();

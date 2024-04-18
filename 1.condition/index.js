@@ -1,28 +1,29 @@
-const isThershold = true;
-const theresult = isThershold ? "true" : "false";
+const threshold = true;
 
-console.log("theresult", theresult);
+const result = threshold ? "benar" : "salah";
 
-const isThersholdTwo = [true, false];
-const theresulttwo = isThersholdTwo.includes(true);
-console.log("theresulttwo", theresulttwo);
+console.log("result", result);
 
-// condition in function
-let thelist = [
-  { data: 0, value: 1 },
-  { data: 1, value: 2 },
-  { data: 2, value: 3 },
-  { data: 3, value: 4 },
-  { data: 4, value: 5 },
-];
-const getValidation = (inputlogic) =>
-  thelist.filter((item) => item.data == inputlogic);
-console.log(getValidation(2));
+// list of condtion
+const listBilangan = [3, 4, 5, 6];
+const resultOne = listBilangan.includes(3);
+if (resultOne) {
+  console.log(`result condition includes ${resultOne}`);
+}
 
-let validatorOne = true;
-let validatorTwo = true;
+const listOfColor = {
+  red: ["apple"],
+  green: ["grape"],
+};
 
-const theresultthree = validatorOne && validatorTwo && "benar";
+const getColor = (color) => {
+  return listOfColor[color];
+};
 
-console.log("theresultthree", theresultthree);
-console.log(false || true);
+console.log(getColor("red"));
+
+const getValidation = (inputNumber) => {
+  return listBilangan.some(() => listBilangan.includes(inputNumber));
+};
+
+console.log(getValidation(3));

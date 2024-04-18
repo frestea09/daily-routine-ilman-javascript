@@ -1,21 +1,16 @@
-let listbilangan = [1, 2, 3, 4, 5];
-
-listbilangan.forEach((item) => console.log(item));
-
-let listBilanganChange = listbilangan.map((item) => item * 2);
-
-console.log("listBilanganChange", listBilanganChange);
-
 for (let iteration = 0; iteration < 5; iteration++) {
-  console.log("iteration", iteration);
+  console.log("iteraiton", iteration);
 }
 
-let thershold = true;
-let iterationthree = 0;
-while (thershold) {
-  if (iterationthree > 5) {
-    thershold = false;
+let threshold = true;
+let iteration = 0;
+while (threshold) {
+  if (iteration == 5) {
+    threshold = false;
   }
-  console.log("iteration", iterationthree);
-  iterationthree++;
+  iteration++;
 }
+
+const listBilangan = [1, 2, 3, 4, 5];
+listBilangan.forEach((iteration) => console.log(iteration));
+console.log(listBilangan.filter((iteration) => iteration == 2));

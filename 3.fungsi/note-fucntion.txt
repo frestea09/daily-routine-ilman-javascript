@@ -79,3 +79,6 @@ const namaFungsi = (parameter1, parameter2) => {
 // Memanggil fungsi
 const hasil = namaFungsi(nilai1, nilai2);
 Penting untuk memahami bahwa fungsi dapat mengembalikan nilai dengan menggunakan pernyataan return. Selain itu, fungsi juga dapat digunakan sebagai parameter untuk fungsi lain, yang dikenal sebagai callback. Pilihan antara deklarasi dan ekspresi fungsi atau antara fungsi konvensional dan arrow tergantung pada kebutuhan dan preferensi Anda. Fungsi juga dapat memiliki parameter default untuk memberikan nilai default jika parameter tidak disediakan saat pemanggilan.
+
+// optimalisasi 
+rubah input menjadi object jika lebih dari 1

@@ -4,9 +4,14 @@ const sayHello = () => {
 
 sayHello();
 
-const getAddtion = (inputPertama, inputKedua) => inputPertama + inputKedua;
-console.log(getAddtion(1, 2));
+const getAddition = (inputData) => {
+  return inputData?.bilanganPertama + inputData?.bilanganKedua;
+};
 
-const getRestParameter = (...inputPertama) => inputPertama;
+console.log(getAddition({ bilanganPertama: 2, bilanganKedua: 3 }));
 
-console.log(getRestParameter(1, 2, 3, 4));
+const getRestParamaeter = (...inputParameter) => {
+  return inputParameter;
+};
+
+console.log(getRestParamaeter(1, 3, 4, 5));
