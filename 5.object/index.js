@@ -1,9 +1,8 @@
 const myObject = {
-  name: "ilman teguh prasetya",
-  age: 23,
-  sayHello: () => {
-    console.log("hello world");
+  name: "ilman",
+  sayHello: (input) => {
+    return input;
   },
 };
 
-myObject.sayHello();
+console.log(myObject.sayHello(2));
