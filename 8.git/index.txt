@@ -4,3 +4,4 @@ get ready :
 
 - satu
 - dua 
+- temp
