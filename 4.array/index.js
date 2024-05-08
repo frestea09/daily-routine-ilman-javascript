@@ -1,5 +1,3 @@
-const listParameter = [1, 2, 3, 4, 5];
-console.log("listParameter", listParameter);
-
+const listParameter = [1, 2, 3, 4];
 listParameter.push(2);
-console.log("listParameter dua", listParameter);
+console.log(listParameter);

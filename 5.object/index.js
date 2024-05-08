@@ -1,8 +1,6 @@
-const myObject = {
-  name: "ilman",
-  sayHello: (input) => {
-    return input;
-  },
+const parameterObject = {
+  name: "ilman teguh prasetya",
+  sayHello: () => console.log("hello worlds"),
 };
 
-console.log(myObject.sayHello(2));
+console.log(parameterObject.name);

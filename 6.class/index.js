@@ -1,14 +1,8 @@
-class People {
-  sayHello() {
-    console.log("hello");
+class Manusia {
+  getAddtion(inputOne, inputTwo) {
+    return inputOne + inputTwo;
   }
 }
 
-class Ilman extends People {
-  constructor() {
-    super();
-  }
-}
-
-const myClass = new Ilman();
-myClass.sayHello();
+const objManusia = new Manusia();
+console.log(objManusia.getAddtion(2, 3));

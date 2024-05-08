@@ -1,12 +1,9 @@
-const sayHello = () => {
-  console.log("hello world");
+const getAddtion = ({ inputOne = 0, inputTwo = 0 }) => {
+  return inputOne + inputTwo;
 };
 
-sayHello();
+console.log("addtion", getAddtion({ inputOne: 2, inputTwo: 3 }));
 
-const getAddtion = (inputPertama, inputtKedua) => inputPertama + inputtKedua;
+const getRestParameter = (...inputParamater) => inputParamater;
 
-console.log("Result addtion", getAddtion(2, 4));
-
-const getRestParameter = (...restparameter) => restparameter;
 console.log(getRestParameter(1, 2, 3, 4, 5));
