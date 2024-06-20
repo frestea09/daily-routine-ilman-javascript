@@ -1,14 +1,50 @@
-const isLogin = true;
+// const iniContanta = "ini Contranta";
+// console.log("contst", iniContanta);
 
-const getLogin = isLogin ? "Login" : "Logout";
+// let iniLet = "ini let";
+// console.log(iniLet);
 
-console.log("login", getLogin);
+// const trigger = 12;
+// if (trigger > 10) {
+//   console.log("lebih besar dari 10");
+// } else {
+//   console.log("lebih kecil dari 10");
+// }
 
-const getValidationOne = ({ inputString, listInput }) =>
-  listInput.includes(inputString);
+// const triggerBoolean = true;
+// const hasil = triggerBoolean ? "benar" : "salah";
+// console.log({ hasil });
 
-const listBilangan = [1, 2, 3, 4, 5];
+// console.log(false || "ganteng");
 
-console.log(getValidationOne({ inputString: 4, listInput: listBilangan }));
+// const theTernarry = true && true ? "super benar" : "salah";
+// console.log({ theTernarry });
 
-console.log(listBilangan.some((item) => item === 1));
+// const getThershold = (input) => {
+//   if (input) {
+//     return "ganteng";
+//   }
+//   return false;
+// };
+
+// console.log(getThershold(true));
+
+// const data = {
+//   red: "merah",
+//   purple: "ungu",
+//   white: "putih",
+// };
+// const getSomething = (input) => {
+//   return data[input] || false;
+// };
+
+// console.log(getSomething("biru"));
+
+// const ages = [1, 2, 20];
+
+// function checkAdult(age) {
+//   return age > 18;
+// }
+// console.log(ages.every(checkAdult));
+
+console.log(true || "benar");

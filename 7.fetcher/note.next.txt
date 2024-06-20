@@ -1,0 +1,99 @@
+// utils/axiosInstance.js
+import axios from 'axios';
+
+const axiosInstance = axios.create({
+  baseURL: 'https://api.example.com', // Ganti dengan URL API Anda
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
+
+export default axiosInstance;
+
+// hooks/useFetch.js
+import useSWR from 'swr';
+import axiosInstance from '../utils/axiosInstance';
+
+const fetcher = (url) => axiosInstance.get(url).then(res => res.data);
+
+const useFetch = (url) => {
+  const { data, error, mutate } = useSWR(url, fetcher);
+  return {
+    data,
+    isLoading: !error && !data,
+    isError: error,
+    mutate
+  };
+};
+
+export default useFetch;
+
+// utils/api.js
+import axiosInstance from './axiosInstance';
+
+export const createData = async (url, data) => {
+  const response = await axiosInstance.post(url, data);
+  return response.data;
+};
+
+export const updateData = async (url, data) => {
+  const response = await axiosInstance.put(url, data);
+  return response.data;
+};
+
+export const deleteData = async (url) => {
+  const response = await axiosInstance.delete(url);
+  return response.data;
+};
+
+
+// pages/index.js
+import React, { useState } from 'react';
+import useFetch from '../hooks/useFetch';
+import { createData, updateData, deleteData } from '../utils/api';
+
+const IndexPage = () => {
+  const { data, isLoading, isError, mutate } = useFetch('/items');
+  const [newItem, setNewItem] = useState('');
+
+  const handleCreate = async () => {
+    await createData('/items', { name: newItem });
+    mutate(); // Refresh data after creation
+  };
+
+  const handleUpdate = async (id, updatedName) => {
+    await updateData(`/items/${id}`, { name: updatedName });
+    mutate(); // Refresh data after update
+  };
+
+  const handleDelete = async (id) => {
+    await deleteData(`/items/${id}`);
+    mutate(); // Refresh data after deletion
+  };
+
+  if (isLoading) return <div>Loading...</div>;
+  if (isError) return <div>Error loading data</div>;
+
+  return (
+    <div>
+      <h1>Items</h1>
+      <ul>
+        {data.map(item => (
+          <li key={item.id}>
+            {item.name}
+            <button onClick={() => handleUpdate(item.id, 'Updated Name')}>Update</button>
+            <button onClick={() => handleDelete(item.id)}>Delete</button>
+          </li>
+        ))}
+      </ul>
+      <input
+        type="text"
+        value={newItem}
+        onChange={(e) => setNewItem(e.target.value)}
+      />
+      <button onClick={handleCreate}>Add Item</button>
+    </div>
+  );
+};
+
+export default IndexPage;
