@@ -1,3 +1,8 @@
-const getAdd = ({ inputPertama, inputKedua }) => inputPertama + inputKedua;
+const getaddtion = ({ inputOne, inputTwo }) => inputOne + inputTwo;
 
-console.log(getAdd({ inputPertama: 1, inputKedua: 2 }));
+const data = {
+  inputOne: 2,
+  inputTwo: 3,
+};
+
+console.log(getaddtion({ inputOne: 1, inputTwo: 2 }));

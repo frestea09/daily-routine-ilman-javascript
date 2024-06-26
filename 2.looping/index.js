@@ -1,2 +1,10 @@
-const listBilangan = [1, 2, 3, 4, 5];
-listBilangan.forEach((item) => console.log(item));
+let therhold = true;
+let bilangan = 0;
+
+while (therhold) {
+  console.log({ bilangan });
+  if (bilangan > 5) {
+    therhold = false;
+  }
+  bilangan++;
+}

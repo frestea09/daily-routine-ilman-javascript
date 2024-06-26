@@ -99,3 +99,25 @@ ages.some(checkAdult);
 function checkAdult(age) {
   return age > 18;
 }
+
+// training
+
+// with threhold boolean
+if (condition) {
+  // blok kode jika kondisi benar
+} else {
+  // blok kode jika kondisi salah
+}
+
+var result = (condition) ? 'Nilai Benar' : 'Nilai Salah';
+const theresult = trigggerOne || triggerTwo;
+const theresult = trigggerOne && triggerTwo;
+
+//includes
+const filter = [1, 2, 3, 4, 5];
+const trigger = 12;
+if (filter.includes(2)) {
+  console.log("benar");
+} else {
+  console.log("tidak");
+}
