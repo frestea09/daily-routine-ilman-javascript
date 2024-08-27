@@ -30,7 +30,6 @@ switch (expression) {
 Short-Circuit Evaluation:
 
 javascript
-Copy code
 // Contoh menggunakan AND (&&)
 (condition1 && condition2) && doSomething();
 
@@ -100,7 +99,7 @@ function checkAdult(age) {
   return age > 18;
 }
 
-// training
+// TRAINING
 
 // with threhold boolean
 if (condition) {

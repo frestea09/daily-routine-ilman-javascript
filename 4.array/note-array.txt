@@ -114,6 +114,19 @@ let arrayGabungan = [...arraySatu, ...arrayDua];
 console.log(arrayGabungan); // Output: [1, 2, 3, 4, 5, 6]
 Penting untuk memahami berbagai metode array yang tersedia, karena dapat mempermudah pekerjaan Anda dalam memanipulasi dan mengelola data. Pilihlah metode yang sesuai dengan kebutuhan spesifik Anda.
 
+// training
+const listBilangan = [1, 2, 3, 4, 5];
+listBilangan.forEach((item) => console.log(item));
+const updateResult = listBilangan.map((item) => item ** 2);
+console.log({ updateResult });
+
+const getValidation = (item: number) => item < 3;
+const resultSome = listBilangan.some(getValidation);
+console.log(resultSome);
+const resultEvery = listBilangan.every(getValidation);
+console.log(resultEvery);
+const resultFilter = listBilangan.filter((item) => item > 2);
+console.log(resultFilter);
 
 
 
