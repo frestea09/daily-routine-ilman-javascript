@@ -1,4 +1,5 @@
-Problem-solving adalah keterampilan kunci dalam pengembangan perangkat lunak dan dunia teknologi. Berikut adalah langkah-langkah umum dalam pendekatan problem-solving yang dapat membantu Anda mengatasi tantangan pemrograman:
+Problem-solving adalah keterampilan kunci dalam pengembangan perangkat lunak dan dunia teknologi. 
+Berikut adalah langkah-langkah umum dalam pendekatan problem-solving yang dapat membantu Anda mengatasi tantangan pemrograman:
 
 Pahami Masalah:
 

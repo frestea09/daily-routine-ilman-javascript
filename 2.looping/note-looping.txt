@@ -57,6 +57,12 @@ array.forEach(function(element) {
 });
 Pilihlah jenis looping yang sesuai dengan kebutuhan spesifik Anda. Penggunaan for cocok untuk iterasi dengan jumlah langkah yang diketahui sebelumnya, sedangkan while dan do-while cocok untuk situasi di mana kondisi perlu dinilai setiap kali iterasi. for-in dan for-of berguna untuk iterasi objek dan iterable objects, masing-masing. Metode forEach biasanya digunakan untuk iterasi array dengan menyediakan fungsi callback untuk setiap elemen.
 
+#Training
+const array = [1, 2, 3, 4, 5];
+array.forEach(function(element) {
+  // Blok kode yang dijalankan berulang kali
+  console.log(element);
+});
 
 
 

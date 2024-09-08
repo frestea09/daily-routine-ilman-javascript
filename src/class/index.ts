@@ -1,8 +1,11 @@
-class MyObj {
-  sayHello() {
-    console.log("hello world");
+const ObjectSaya = class {
+  constructor(name) {
+    this.name = name;
   }
-}
+  sayHello() {
+    console.log(`hello my name is ${this.name}`);
+  }
+};
 
-const myObj = new MyObj();
-myObj.sayHello();
+const temp = new ObjectSaya("ilman");
+temp.sayHello();

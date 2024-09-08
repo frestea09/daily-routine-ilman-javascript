@@ -1,28 +1,20 @@
-const sayHelloWorld = () => {
+const item = () => {
   console.log("hello world");
 };
 
-sayHelloWorld();
+item();
+const getAddition = (inputBilanganPertama, inputBilanganKedua) =>
+  inputBilanganPertama + inputBilanganKedua;
 
-const getAddtion = ({
-  bilanganPertama,
-  bilanganKedua,
-}: {
-  bilanganPertama: number;
-  bilanganKedua: number;
-}) => bilanganPertama + bilanganKedua;
+const resultAddition = getAddition(1, 2);
+console.log({ resultAddition });
 
-console.log(getAddtion({ bilanganKedua: 2, bilanganPertama: 1 }));
+const getArray = () => ({ one: 1 });
+const resultArray = getArray();
+console.log(resultArray);
 
-const sayName = (inputName: string) => console.log(`hello world ${inputName}`);
+const getObject = ({ bilanganSatu = 0, bilanganDua = 0 }) =>
+  bilanganSatu + bilanganDua;
 
-const manusia = ({ name, sayName }: { name: string; sayName: any }) => {
-  sayName(name);
-};
-
-manusia({ name: "ilman", sayName: sayName });
-
-const fungsiRest = (...inputArgs: any) =>
-  inputArgs.forEach((item: number) => console.log(item));
-
-fungsiRest(2, 3, 4, 5, 6);
+const resultObject = getObject({ bilanganSatu: 1, bilanganDua: 2 });
+console.log(resultObject);

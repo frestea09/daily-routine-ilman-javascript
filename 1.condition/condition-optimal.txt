@@ -112,6 +112,15 @@ var result = (condition) ? 'Nilai Benar' : 'Nilai Salah';
 const theresult = trigggerOne || triggerTwo;
 const theresult = trigggerOne && triggerTwo;
 
+#efektif condition
+const listCondition = {
+  one: "satu",
+  two: "dua",
+};
+
+const result = listCondition["one"];
+console.log(result);
+
 //includes
 const filter = [1, 2, 3, 4, 5];
 const trigger = 12;
@@ -119,4 +128,20 @@ if (filter.includes(2)) {
   console.log("benar");
 } else {
   console.log("tidak");
+}
+
+# Use Array.every & Array.some for All / Partial Criteria
+const ages = [32, 33, 16, 40];
+
+ages.every(checkAge)
+
+function checkAge(age) {
+  return age > 18;
+}
+
+const ages = [3, 10, 18, 20];
+
+ages.some(checkAdult);
+function checkAdult(age) {
+  return age > 18;
 }

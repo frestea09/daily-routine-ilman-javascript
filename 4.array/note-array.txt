@@ -119,7 +119,11 @@ const listBilangan = [1, 2, 3, 4, 5];
 listBilangan.forEach((item) => console.log(item));
 const updateResult = listBilangan.map((item) => item ** 2);
 console.log({ updateResult });
+let arraySatu = [1, 2, 3];
+let arrayDua = [4, 5, 6];
 
+// Menggunakan spread operator
+let arrayGabungan = [...arraySatu, ...arrayDua];
 const getValidation = (item: number) => item < 3;
 const resultSome = listBilangan.some(getValidation);
 console.log(resultSome);
@@ -127,6 +131,7 @@ const resultEvery = listBilangan.every(getValidation);
 console.log(resultEvery);
 const resultFilter = listBilangan.filter((item) => item > 2);
 console.log(resultFilter);
+let adaTiga = arrayAngka.includes(3);
 
 
 

@@ -1,39 +1,35 @@
-const threshold = true;
-if (threshold) {
+const isLogin = true;
+if (isLogin) {
   console.log("hello world");
-}
-if (threshold) {
-  console.log("benar");
 } else {
-  console.log("salah");
+  console.log("input salah");
 }
+const isTrue = isLogin ? "benar" : "salah";
+// console.log(isTrue);
+const isConditionOne = true;
+const isConditionTwo = true;
+const resultANDConditon = isConditionOne && isConditionTwo ? "benar" : "salah";
+// console.log(resultANDConditon);
+const isOne = false;
+const theResult = isOne && "benar";
+// console.log(theResult);
+const isTwo = false;
+const theResultOne = isTwo || "benar";
+// console.log(theResultOne);
 
-const tenarryThrehold = true;
-const resultOfTennary = tenarryThrehold ? "benar" : "salah";
-console.log(resultOfTennary);
-
-const firstThreshold = true;
-const secondThreshold = false;
-const resultAndConditon = firstThreshold && secondThreshold ? "benar" : "salah";
-console.log(resultAndConditon);
-const resultOrConditon = firstThreshold || secondThreshold ? "benar" : "salah";
-console.log(resultOrConditon);
-
-const listBuah = ["apel", "jeruk", "jambu"];
-const result = listBuah.includes("apel");
-console.log({ result });
-
-const listOption = {
-  red: "merah",
-  purple: "ungu",
-  yellow: "kuning",
+const listCondition = {
+  one: "satu",
+  two: "dua",
 };
 
-console.log(listOption["yellow"]);
+const result = listCondition["one"];
+// console.log(result);
 
-const listBilangan = [1, 2, 3, 4, 5];
-const getValidation = (inputBilangan: number) =>
-  inputBilangan > 2 && inputBilangan;
-
-console.log(listBilangan.some(getValidation));
-console.log(listBilangan.every(getValidation));
+const listBilangan = [1, 2, 3, 4, 5, 6];
+const getCheck = (inputItem) => {
+  return inputItem > 3;
+};
+const theResultBilangan = listBilangan.every(getCheck);
+console.log(theResultBilangan);
+const resultSome = listBilangan.some(getCheck);
+console.log(resultSome);
