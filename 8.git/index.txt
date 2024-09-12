@@ -3,3 +3,4 @@ prepare for training
 one
 two 
 temp
+hapus ini 
