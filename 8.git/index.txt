@@ -1,9 +1,5 @@
 prepare for training
 
-<<<<<<< HEAD
 one
 two 
 temp
-=======
-one
->>>>>>> parent of 3eae2c8 (feat : oke)
