@@ -1,4 +1,3 @@
-Prepare for training github
+prepare for training
 
-one 
-ini tambahan branch dua
+one
