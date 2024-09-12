@@ -1,35 +1,20 @@
-const isLogin = true;
-if (isLogin) {
-  console.log("hello world");
+const variabelSatu = true;
+if (variabelSatu) {
+  console.log("benar");
 } else {
-  console.log("input salah");
+  console.log("salah");
 }
-const isTrue = isLogin ? "benar" : "salah";
-// console.log(isTrue);
-const isConditionOne = true;
-const isConditionTwo = true;
-const resultANDConditon = isConditionOne && isConditionTwo ? "benar" : "salah";
-// console.log(resultANDConditon);
-const isOne = false;
-const theResult = isOne && "benar";
-// console.log(theResult);
-const isTwo = false;
-const theResultOne = isTwo || "benar";
-// console.log(theResultOne);
-
-const listCondition = {
-  one: "satu",
-  two: "dua",
-};
-
-const result = listCondition["one"];
-// console.log(result);
-
-const listBilangan = [1, 2, 3, 4, 5, 6];
-const getCheck = (inputItem) => {
-  return inputItem > 3;
-};
-const theResultBilangan = listBilangan.every(getCheck);
-console.log(theResultBilangan);
-const resultSome = listBilangan.some(getCheck);
-console.log(resultSome);
+const variableDua = true;
+const variableTiga = false;
+const resultTennary = variableDua && variableTiga ? "benar" : "salah";
+console.log(resultTennary);
+const listBilangan = [1, 2, 3, 4, 6];
+const resultIncludes = listBilangan.includes(3);
+console.log(resultIncludes);
+const getThreshold = (item) => item < 3;
+const resultFilter = listBilangan.filter(getThreshold);
+console.log(resultFilter);
+const resultSOme = listBilangan.some(getThreshold);
+console.log(resultSOme);
+const resultEvery = listBilangan.every(getThreshold);
+console.log(resultEvery);

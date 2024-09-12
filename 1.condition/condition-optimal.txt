@@ -1,21 +1,19 @@
 If-Else Statements:
 
 javascript
-Copy code
 if (condition) {
   // blok kode jika kondisi benar
 } else {
   // blok kode jika kondisi salah
 }
+
 Ternary Operator:
 
 javascript
-Copy code
 var result = (condition) ? 'Nilai Benar' : 'Nilai Salah';
 Switch Statement:
 
 javascript
-Copy code
 switch (expression) {
   case value1:
     // blok kode jika expression sama dengan value1
@@ -38,7 +36,6 @@ javascript
 Guard Clauses:
 
 javascript
-Copy code
 function exampleFunction(parameter) {
   if (!parameter) {
     return 'Nilai parameter tidak valid';

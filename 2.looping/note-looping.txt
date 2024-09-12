@@ -64,7 +64,12 @@ array.forEach(function(element) {
   console.log(element);
 });
 
-
+while (i < 5) {
+  // Blok kode yang dijalankan berulang kali
+  console.log(i);
+  i++;
+}
+Do-While Loop:
 
 
 
