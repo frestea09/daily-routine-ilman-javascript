@@ -2,4 +2,4 @@ prepare for training git
 
 one
 tambah dari one
-temp # siap hapus
+temp # siap hapu
