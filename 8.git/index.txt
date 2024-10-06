@@ -1,7 +1,1 @@
-prepare for training
-
-one
-two 
-temp
-
-ditambah satu
+prepare for training git
