@@ -1,5 +1,4 @@
-prepare for training git
+Prepare for git list
 
 one
-tambah dari one
-temp # siap hapus
+two

@@ -1,8 +1,11 @@
-const sayHello = () => {
-  console.log("hello world");
+const sayHelloWorld = () => {
+  console.log("hello");
 };
-sayHello();
-const getAddition = (inputOne, inputTwo) => inputOne + inputTwo;
-console.log(getAddition(1, 2));
-const getReturnObject = (inputOne, inputTwo) => ({ inputOne, inputTwo });
-console.log(getReturnObject(1, 2));
+
+sayHelloWorld();
+
+const sayHelloWorldTwo = (inputOne, inputTwo) => inputOne + inputTwo;
+
+const theResult = sayHelloWorldTwo(2, 3);
+
+console.log(theResult);

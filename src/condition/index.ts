@@ -1,34 +1,30 @@
-const variableSatu = true;
-if (variableSatu) {
-  console.log("hello world");
+const isThrehold = true;
+
+if (isThrehold) {
+  console.log("benar");
 } else {
   console.log("salah");
 }
 
-const good = true;
-const tennaryVariable = good ? "bener banget" : "salah banget";
-console.log(tennaryVariable);
+const isThreholdShort = true;
+const theResult = isThreholdShort ? "benar" : "salah";
+console.log(theResult);
 
-const listMenu = {
-  satu: 1,
-  dua: 2,
-  tiga: 3,
-};
+const resultTwo = false && true;
+console.log(resultTwo);
 
-const hasilListMenu = listMenu.satu;
-console.log(hasilListMenu);
-
-const listPilihan = [1, 2, 3, 4, 5];
-console.log(listPilihan.includes(2));
-function getValidation(input) {
-  return input > 3;
-}
-
-console.log(listPilihan.every(getValidation));
-console.log(listPilihan.some(getValidation));
-
-const threholdOne = true;
-const threhodlTwo = true;
-
-const resultAndCondtion = threhodlTwo && threholdOne;
-console.log(resultAndCondtion);
+// condition optimal can use filter
+const listOfThrehold = [1, 2, 3, 4, 5];
+const resultOfThrehold = listOfThrehold.includes(4);
+console.log(resultOfThrehold);
+// alternative you can use
+const resultOfThreholdTwo = [{ name: "ilman" }, { name: "teguh" }];
+const theResultTwo = resultOfThreholdTwo[0];
+console.log(theResultTwo);
+const getValidate = (inputItem) => inputItem > 4;
+const resultValidate = listOfThrehold.some(getValidate);
+console.log(resultValidate);
+const resultEvery = listOfThrehold.every(getValidate);
+const cobaarray = listOfThrehold.map((item) => item * 5);
+const hasilFilter = listOfThrehold.filter(getValidate);
+console.log(hasilFilter);

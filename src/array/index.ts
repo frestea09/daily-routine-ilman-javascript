@@ -1,5 +1,5 @@
-const listBilangan = [1, 2, 3, 4, 5];
-console.log(listBilangan);
+const listBilanganA = [1, 2, 3, 4, 5];
+console.log(listBilanganA);
 const listBilanganObject = [
   {
     one: 1,
