@@ -2,7 +2,3 @@ Prepare for git list
 
 one
 two
-three
-
-ready to temp
-temp
